@@ -162,7 +162,7 @@ mod tests {
         let rpc_client = RpcClient::new(RPC_URL);
 
         // Let's define our accounts
-        let signer = read_keypair_file("wba-wallet.json").expect("Couldn't find wallet file");
+        let signer = read_keypair_file("dev-wallet.json").expect("Couldn't find wallet file");
 
         let prereq = WbaPrereqProgram::derive_program_address(&[
             b"prereq",
